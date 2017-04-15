@@ -1,0 +1,70 @@
+.empLists {
+	width: 100%;
+	text-align: center;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.empLists .empList img{
+	width: 200px;
+	height: 200px;
+}
+
+.empLists .empList .expand {
+	background-color: green;
+	color:#fff;
+	width: 200px;
+	cursor: pointer;
+}
+
+.hierarchy {
+	width:100%;
+	position:absolute;
+	z-index: 1;
+	color: #008bcf;
+}
+
+@media screen and (max-width: 480px){
+
+	.empLists .empList {
+		float: left;
+		width : 100%;
+		margin: 30px 0;
+		position:relative;
+		height: 300px;
+	}
+	
+}
+@media screen  and (min-width: 480px) and (max-width: 768px){
+
+	.empLists .empList {
+		float: left;
+		width : 50%;
+		margin: 30px 0;
+		position:relative;
+		height: 300px;
+	}
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	
+	.empLists .empList {
+		float: left;
+		width : 33.33%;
+		margin: 30px 0;
+		position:relative;
+		height: 300px;
+	}
+	
+}
+@media screen and (min-width: 1024px) and (max-width: 1600px){
+
+	.empLists .empList {
+		float: left;
+		width : 25%;
+		margin: 30px 0;
+		position:relative;
+		height: 300px;
+	}
+}

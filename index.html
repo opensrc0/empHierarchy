@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+		<script  src="https://code.angularjs.org/1.4.0/angular.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js"></script>
+		<script src="services.js"></script>
+		<script src="controller.js"></script>
+	</head>
+
+	<body>
+		<div ng-app="empApp" ng-controller="empCtrl as emp">
+			<div class="empLists">
+				<div>
+					<div class="empList" ng-repeat="empData in emp.empJson">
+						<img src="img/{{empData.image}}" style="" onerror="this.src='img/default.jpeg';">
+						<div>{{empData.name}}</div>
+						<center>
+							<div class="expand" ng-click="toggle = toggle == 'collapse' ? 'expend' : 'collapse'; 
+								emp.gethierarchy(empData.empId, empData.pointing, empData.name);">
+								{{toggle || 'expend'}}
+							</div>
+						</center>
+						<center>
+						<div class="hierarchy" ng-if="toggle == 'collapse'">
+							<span><a href="javascript: void(0)" style="margin-left: 20px;">{{empData.name}}</a></span>
+							<span ng-repeat="pointingName in emp.hierarchy[empData.empId]">
+								&nbsp;<img src="img/arrow.png" style="width: 10px;height: 10px;"> 
+								<a href="javascript: void(0)">{{pointingName.name}}</a>
+							</span>
+						</div>
+						</center>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
