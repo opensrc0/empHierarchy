@@ -14,7 +14,7 @@
 			<div class="empLists">
 				<div>
 					<div class="empList" ng-repeat="empData in emp.empJson">
-						<img src="img/{{empData.image}}" style="" onerror="this.src='img/default.jpeg';">
+						<img src="{{empData.image}}" style="" onerror="this.src='https://image.ibb.co/nuGDD5/default.jpg';">
 						<div>{{empData.name}}</div>
 						<center>
 							<div class="expand" ng-click="toggle = toggle == 'collapse' ? 'expend' : 'collapse'; 
@@ -24,9 +24,9 @@
 						</center>
 						<center>
 						<div class="hierarchy" ng-if="toggle == 'collapse'">
-							<span><a href="javascript: void(0)" style="margin-left: 20px;">{{empData.name}}</a></span>
+							<span><a href="javascript: void(0)" class="empName">{{empData.name}}</a></span>
 							<span ng-repeat="pointingName in emp.hierarchy[empData.empId]">
-								&nbsp;<img src="img/arrow.png" style="width: 10px;height: 10px;"> 
+								<img class="arrow" src="https://image.ibb.co/ev6DD5/arrow.png"> 
 								<a href="javascript: void(0)">{{pointingName.name}}</a>
 							</span>
 						</div>

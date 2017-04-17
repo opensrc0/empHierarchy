@@ -6,35 +6,35 @@ app.service("empService", function() {
 			"name": "Himanshu Gupta",
 			"empId": 801,
 			"pointing": 501,
-			"image" : '883.jpg',
+			"image" : 'https://image.ibb.co/dcAJfk/883.jpg',
 			"status" : 1
 		}, 
 		501 : {
 			"name": "Samar Panda",
 			"empId": 501,
 			"pointing": 100,
-			"image" : '766.jpg',
+			"image" : 'https://image.ibb.co/gTttD5/766.jpg',
 			"status" : 1
 		},
 		100 : {
 			"name": "Himanshu Sharma",
 			"empId": 100,
 			"pointing": 89,
-			"image" : '553.jpg',
+			"image" : 'https://image.ibb.co/hDPN6Q/553.jpg',
 			"status" : 1
 		},
 		325 : {
 			"name": "Manish Sinha",
 			"empId": 325,
 			"pointing": 9,
-			"image" : '325.jpg',
+			"image" : 'https://image.ibb.co/iy9YD5/325.jpg',
 			"status" : 1
 		}, 
 		89: {
 			"name": "Manoj Sharma",
 			"empId": 89,
 			"pointing": 9,
-			"image" : '189.jpg',
+			"image" : 'https://image.ibb.co/fQcaRQ/189.jpg',
 			"status" : 1
 		},
 		9 : {
@@ -48,14 +48,14 @@ app.service("empService", function() {
 			"name": "Jay Prakash",
 			"empId": 802,
 			"pointing": 501,
-			"image" : '883.jpg',
+			"image" : 'https://image.ibb.co/fuUEmQ/603.jpg',
 			"status" : 1
 		}, 
 		803: {
 			"name": "Gugan N",
 			"empId": 803,
 			"pointing": 100,
-			"image" : '883.jpg',
+			"image" : 'https://preview.ibb.co/nd2BY5/2323.jpg',
 			"status" : 1
 		},
 		1000: {

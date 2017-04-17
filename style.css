@@ -26,6 +26,16 @@
 	color: #008bcf;
 }
 
+.empLists .empList img.arrow {
+	width: 10px;
+	height: 10px;
+	margin-left: 1px; 
+}
+
+.empName {
+	margin-left: 20px;
+}
+
 @media screen and (max-width: 480px){
 
 	.empLists .empList {
